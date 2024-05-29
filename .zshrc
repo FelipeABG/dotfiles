@@ -55,7 +55,7 @@ alias c="clear"
 alias e="exit"
 alias v="nvim"
 alias vim="nvim"
-alias ls="ls --color"
+alias ls="ls -a --color"
 
 #CLI tools
 eval "$(zoxide init zsh)"
