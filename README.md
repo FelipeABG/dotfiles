@@ -1,5 +1,3 @@
-Here's an updated version of your README file, incorporating the use of GNU Stow to manage the dotfiles and improving the structure for better readability and understanding.
-
 ---
 
 # Dotfiles
