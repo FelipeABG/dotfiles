@@ -25,43 +25,33 @@ Welcome to my dotfiles repository! This repository contains my personal configur
 
 This repository contains configuration files for the following tools:
 
-- **Neovim**: A highly configurable text editor.
-- **Zsh**: A powerful shell with many features.
-- **Alacritty**: A fast, cross-platform terminal emulator.
-- **Tmux**: A terminal multiplexer that allows you to manage multiple terminal sessions.
-- **Starship**: A customizable, minimal, and fast shell prompt.
+- **Neovim**: Text editor
+- **Zsh**: Shell
+- **Alacritty**: Terminal emulator
+- **Tmux** Terminal multiplexer
+- **Starship** Shell prompt
 
 ## Installation
 
 ### Clone the Repository
 
-> **Note**: Before running the `stow` commands, make sure you have visited the [Tools](#tools) section and have installed the dependencies required.
+
 
 Clone this repository to your home directory:
 
 ```sh
-git clone https://github.com/yourusername/dotfiles.git ~/dotfiles
+git clone https://github.com/FelipeABG/dotfiles
 cd ~/dotfiles
 ```
 
 ### Use GNU Stow to Manage Dotfiles
 
-Before running the `stow` commands, make sure you hav
+> **Note**: Before running the `stow` command, make sure you have visited the [Tools](#tools) section and have installed the dependencies required.
 
-To install the configurations, run the following command for each tool:
-
-```sh
-stow <tool>
-```
-
-For example, to set up the configuration for Neovim, Zsh, Alacritty, Tmux, and Starship, run:
+To install the configurations, run the following command:
 
 ```sh
-stow nvim
-stow zsh
-stow alacritty
-stow tmux
-stow starship
+stow .
 ```
 
 ## Tools
@@ -70,7 +60,6 @@ stow starship
 
 **Configuration File**: `nvim/.config/nvim/init.vim`
 
-- My Neovim configuration includes various plugins managed by a plugin manager ([Lazy](https://github.com/folke/lazy.nvim)).
 - Ensure you have Neovim installed:
   ```sh
   sudo pacman -S neovim
@@ -82,10 +71,12 @@ stow starship
 **Configuration File**: `zsh/.zshrc`
 
 - Ensure you have Zsh installed. If not, you can install it by following the instructions [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH).
-- Make sure you have installed the dependencies:
+  
+- The config uses `fzf` and `zoxide` as dependencies, so make sure you have it installed: 
   ```sh
   sudo pacman -S fzf zoxide
   ```
+  
 - After installing, source the `.zshrc` file:
   ```sh
   source ~/.zshrc
@@ -93,7 +84,7 @@ stow starship
 
 ### Alacritty
 
-**Configuration File**: `alacritty/.config/alacritty/alacritty.yml`
+**Configuration File**: `alacritty/.config/alacritty/alacritty.toml`
 
 - Ensure you have Alacritty installed. You can find installation instructions [here](https://github.com/alacritty/alacritty).
 
@@ -105,6 +96,7 @@ stow starship
   ```sh
   sudo pacman -S tmux
   ```
+  
 - Reload the Tmux configuration by running:
   ```sh
   tmux source-file ~/.tmux.conf
@@ -133,10 +125,3 @@ Feel free to customize these configuration files to suit your needs. Each file i
 
 Many of the configurations and ideas in these dotfiles were inspired by other developers and various online resources. Special thanks to the open-source community for sharing their setups and tips.
 
----
-
-Feel free to reach out if you have any questions or suggestions! Happy hacking!
-
----
-
-By following this template, you can easily set up and maintain your own dotfiles repository.
