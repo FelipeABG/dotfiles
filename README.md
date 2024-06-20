@@ -7,7 +7,6 @@ Welcome to my dotfiles repository! This repository contains my personal configur
 ## Table of Contents
 
 - [Overview](#overview)
-- [Installation](#installation)
 - [Tools](#tools)
   - [Neovim](#neovim)
   - [Zsh](#zsh)
@@ -27,17 +26,13 @@ This repository contains configuration files for the following tools:
 - **Tmux**: A terminal multiplexer that allows you to manage multiple terminal sessions.
 - **Starship**: A customizable, minimal, and fast shell prompt.
 
-## Installation
-
-To get started, clone this repository to your home directory:
-
 ## Tools
 
 ### Neovim
 
 Make sure you have neovim installed:
-```sh
-    sudo pacman -S neovim
+```
+sudo pacman -S neovim
 ```
 
 **Configuration File**: `nvim/init.vim`
@@ -53,13 +48,13 @@ The next time you open neovim, all the plugins should be installed.
 - Make sure you have zsh installed. If not, you can install it in your operating system following the instructions [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH).
 
 - fzf is used in the configuration, so make sure you have it installed as well. If not:
-```sh
-    sudo pacman -S fzf
+```
+sudo pacman -S fzf
 ```
 
 - zoxide is used in the configuration, so make sure you have it installed as well. If not:
-```sh
-    sudo pacman -S zoxide
+```
+sudo pacman -S zoxide
 ```
 
 After that, just source the config file by running `source .zshrc`.
