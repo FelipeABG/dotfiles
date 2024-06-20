@@ -61,7 +61,7 @@ stow .
 
 ### Neovim
 
-**Configuration File**: `nvim/.config/nvim/init.vim`
+**Configuration File**: `.config/nvim/init.vim`
 
 - Ensure you have Neovim installed:
   ```sh
@@ -71,7 +71,7 @@ stow .
 
 ### Zsh
 
-**Configuration File**: `zsh/.zshrc`
+**Configuration File**: `.zshrc`
 
 - Ensure you have Zsh installed. If not, you can install it by following the instructions [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH).
   
@@ -87,7 +87,7 @@ stow .
 
 ### Alacritty
 
-**Configuration File**: `alacritty/.config/alacritty/alacritty.toml`
+**Configuration File**: `.config/alacritty/alacritty.toml`
 
 - Ensure you have Alacritty installed. You can find installation instructions [here](https://github.com/alacritty/alacritty).
 
@@ -102,12 +102,12 @@ stow .
   
 - Reload the Tmux configuration by running:
   ```sh
-  tmux source-file ~/.tmux.conf
+  tmux source .tmux.conf
   ```
 
 ### Starship
 
-**Configuration File**: `starship/.config/starship.toml`
+**Configuration File**: `.config/starship.toml`
 
 - Ensure you have Starship installed. You can install it by running:
   ```sh
