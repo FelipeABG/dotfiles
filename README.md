@@ -26,8 +26,8 @@ This repository contains configuration files for the following tools:
 - **Neovim**: Text editor
 - **Zsh**: Shell
 - **Alacritty**: Terminal emulator
-- **Tmux** Terminal multiplexer
-- **Starship** Shell prompt
+- **Tmux**: Terminal multiplexer
+- **Starship**: Shell prompt
 
 ## Installation
 
