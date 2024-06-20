@@ -44,7 +44,7 @@ cd ~/dotfiles
 
 ### Use GNU Stow to Manage Dotfiles
 
-- Make sure you have `stow` installed:
+Make sure you have `stow` installed:
 ```
 sudo pacman -S stow
 ```
