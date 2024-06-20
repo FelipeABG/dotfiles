@@ -1,12 +1,17 @@
+Here's an updated version of your README file, incorporating the use of GNU Stow to manage the dotfiles and improving the structure for better readability and understanding.
+
+---
+
 # Dotfiles
 
 Welcome to my dotfiles repository! This repository contains my personal configuration files for various tools and applications that I use on a daily basis. Below you will find instructions on how to set up and use these configurations.
 
-> **Note**: Arch linux is used as example for installation of the tools. Adapt it to you own sytem.
+> **Note**: Arch Linux is used as an example for the installation of the tools. Adapt it to your own system.
 
 ## Table of Contents
 
 - [Overview](#overview)
+- [Installation](#installation)
 - [Tools](#tools)
   - [Neovim](#neovim)
   - [Zsh](#zsh)
@@ -26,57 +31,88 @@ This repository contains configuration files for the following tools:
 - **Tmux**: A terminal multiplexer that allows you to manage multiple terminal sessions.
 - **Starship**: A customizable, minimal, and fast shell prompt.
 
+## Installation
+
+### Clone the Repository
+
+> **Note**: Before running the `stow` commands, make sure you have visited the [Tools](#tools) section and have installed the dependencies required.
+
+Clone this repository to your home directory:
+
+```sh
+git clone https://github.com/yourusername/dotfiles.git ~/dotfiles
+cd ~/dotfiles
+```
+
+### Use GNU Stow to Manage Dotfiles
+
+Before running the `stow` commands, make sure you hav
+
+To install the configurations, run the following command for each tool:
+
+```sh
+stow <tool>
+```
+
+For example, to set up the configuration for Neovim, Zsh, Alacritty, Tmux, and Starship, run:
+
+```sh
+stow nvim
+stow zsh
+stow alacritty
+stow tmux
+stow starship
+```
+
 ## Tools
 
 ### Neovim
 
-Make sure you have neovim installed:
-```
-sudo pacman -S neovim
-```
-
-**Configuration File**: `nvim/init.vim`
+**Configuration File**: `nvim/.config/nvim/init.vim`
 
 - My Neovim configuration includes various plugins managed by a plugin manager ([Lazy](https://github.com/folke/lazy.nvim)).
-
-The next time you open neovim, all the plugins should be installed.
+- Ensure you have Neovim installed:
+  ```sh
+  sudo pacman -S neovim
+  ```
+- The next time you open Neovim, all the plugins should be installed.
 
 ### Zsh
 
-**Configuration File**: `.zshrc`
+**Configuration File**: `zsh/.zshrc`
 
-- Make sure you have zsh installed. If not, you can install it in your operating system following the instructions [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH).
-
-- fzf is used in the configuration, so make sure you have it installed as well. If not:
-```
-sudo pacman -S fzf
-```
-
-- zoxide is used in the configuration, so make sure you have it installed as well. If not:
-```
-sudo pacman -S zoxide
-```
-
-After that, just source the config file by running `source .zshrc`.
+- Ensure you have Zsh installed. If not, you can install it by following the instructions [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH).
+- Make sure you have installed the dependencies:
+  ```sh
+  sudo pacman -S fzf zoxide
+  ```
+- After installing, source the `.zshrc` file:
+  ```sh
+  source ~/.zshrc
+  ```
 
 ### Alacritty
 
-**Configuration File**: `alacritty/alacritty.toml`
+**Configuration File**: `alacritty/.config/alacritty/alacritty.yml`
 
 - Ensure you have Alacritty installed. You can find installation instructions [here](https://github.com/alacritty/alacritty).
 
 ### Tmux
 
-**Configuration File**: `.tmux.conf`
+**Configuration File**: `tmux/.tmux.conf`
 
-- After placing the `.tmux.conf` file in your home directory, reload the Tmux configuration by running:
+- Ensure you have Tmux installed:
+  ```sh
+  sudo pacman -S tmux
+  ```
+- Reload the Tmux configuration by running:
   ```sh
   tmux source-file ~/.tmux.conf
   ```
 
 ### Starship
 
-**Configuration File**: `starship/starship.toml`
+**Configuration File**: `starship/.config/starship.toml`
 
 - Ensure you have Starship installed. You can install it by running:
   ```sh
@@ -97,4 +133,10 @@ Feel free to customize these configuration files to suit your needs. Each file i
 
 Many of the configurations and ideas in these dotfiles were inspired by other developers and various online resources. Special thanks to the open-source community for sharing their setups and tips.
 
+---
 
+Feel free to reach out if you have any questions or suggestions! Happy hacking!
+
+---
+
+By following this template, you can easily set up and maintain your own dotfiles repository.
