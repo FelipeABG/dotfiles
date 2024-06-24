@@ -102,7 +102,7 @@ stow .
   
 - Reload the Tmux configuration by running:
   ```sh
-  tmux source .tmux.conf
+  tmux source tmux.conf
   ```
 
 ### Starship
