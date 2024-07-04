@@ -1,1 +1,22 @@
+# Timeout for Starship to scan files (in milliseconds)
+scan_timeout = 50
 
+# Timeout for commands executed by Starship (in milliseconds)
+command_timeout = 700
+
+[character]
+success_symbol = "[➜](green)"
+error_symbol = "[➜](red)"
+vimcmd_symbol = "[⇠](green)"
+
+[cmd_duration]
+show_milliseconds = true
+
+[git_metrics]
+disabled = false
+
+[memory_usage]
+disabled = true
+
+[nodejs]
+symbol = "⏣ "
