@@ -1,22 +1,15 @@
 return {
-  "catppuccin/nvim",
+  'olivercederborg/poimandres.nvim',
+  lazy = false,
   priority = 1000,
   config = function()
-    require("catppuccin").setup({
-      flavour = "mocha",
-      transparent_background = true,
-      integrations = {
-        cmp = true,
-        gitsigns = true,
-        nvimtree = true,
-        treesitter = true,
-        notify = true,
-        mini = {
-          enabled = true,
-          indentscope_color = "",
-        },
-      },
-    })
-    vim.cmd.colorscheme("catppuccin")
+    require('poimandres').setup {
+      disable_background = true,
+    }
   end,
+
+  -- optionally set the colorscheme within lazy config
+  init = function()
+    vim.cmd("colorscheme poimandres")
+  end
 }

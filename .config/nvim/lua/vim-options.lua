@@ -13,6 +13,7 @@ vim.cmd("set pumheight=15")
 vim.o.hlsearch = false
 vim.g.mapleader = " "
 vim.g.maplocalleader = ","
+vim.opt.fillchars = { eob = " " }
 
 vim.keymap.set("n", "<leader>f", ":qa!<CR>")
 vim.keymap.set("n", "<leader>s", ":wall<CR>")
