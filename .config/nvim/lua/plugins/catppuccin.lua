@@ -4,6 +4,7 @@ return {
   priority = 1000,
   config = function()
     require('poimandres').setup {
+      disable_float_background = true,
       disable_background = true,
     }
   end,
@@ -13,3 +14,4 @@ return {
     vim.cmd("colorscheme poimandres")
   end
 }
+
