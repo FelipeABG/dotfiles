@@ -78,6 +78,10 @@ symbol = " "
 [elm]
 symbol = " "
 
+[package]
+disabled = true
+symbol = " 󰏗 "
+
 [git_branch]
 symbol = " "
 
@@ -101,9 +105,6 @@ symbol = " "
 
 [nodejs]
 symbol = "  "
-
-[package]
-symbol = " 󰏗 "
 
 [perl]
 symbol = " "
