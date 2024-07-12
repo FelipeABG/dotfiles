@@ -7,7 +7,7 @@ style_user = "bold red"
 # Second param
 [hostname]
 disabled = false
-format = "[$hostname]($style) "
+format = "[$hostname]($style)"
 ssh_only = false
 style = "bold dimmed red"
 trim_at = "-"
@@ -36,27 +36,27 @@ symbol = "🔴"
 
 [aws]
 symbol = " "
-format = "[ $symbol$version ]($style)"
+format = "[|$symbol$version ]($style)"
 
 [conda]
 symbol = " "
-format = "[ $symbol$version ]($style)"
+format = "[|$symbol$version ]($style)"
 
 [dart]
 symbol = " "
-format = "[ $symbol$version ]($style)"
+format = "[|$symbol$version ]($style)"
 
 [docker_context]
 symbol = " "
-format = "[ $symbol$version ]($style)"
+format = "[|$symbol$version ]($style)"
 
 [elixir]
 symbol = " "
-format = "[ $symbol$version ]($style)"
+format = "[|$symbol$version ]($style)"
 
 [elm]
 symbol = " "
-format = "[ $symbol$version ]($style)"
+format = "[|$symbol$version ]($style)"
 
 [package]
 disabled = true
@@ -64,59 +64,59 @@ symbol = " 󰏗 "
 
 [git_branch]
 symbol = " "
-format = ' [$symbol$branch(:$remote_branch)]($style) '
+format = ' [| $symbol$branch(:$remote_branch)]($style) '
 
 [git_status]
 disabled = true
 
 [golang]
 symbol = " "
-format = "[ $symbol$version ]($style)"
+format = "[|$symbol$version ]($style)"
 
 [hg_branch]
 symbol = " "
-format = "[ $symbol$version ]($style)"
+format = "[|$symbol$version ]($style)"
 
 [java]
 symbol = " "
-format = "[ $symbol$version ]($style)"
+format = "[|$symbol$version ]($style)"
 
 [julia]
 symbol = " "
-format = "[ $symbol$version ]($style)"
+format = "[|$symbol$version ]($style)"
 
 [nim]
 symbol = " "
-format = "[ $symbol$version ]($style)"
+format = "[|$symbol$version ]($style)"
 
 [nix_shell]
 symbol = " "
-format = "[ $symbol$version ]($style)"
+format = "[|$symbol$version ]($style)"
 
 [nodejs]
 symbol = "  "
-format = "[ $symbol$version ]($style)"
+format = "[|$symbol$version ]($style)"
 
 [perl]
 symbol = " "
-format = "[ $symbol$version ]($style)"
+format = "[|$symbol$version ]($style)"
 
 [php]
 symbol = " "
-format = "[ $symbol$version ]($style)"
+format = "[|$symbol$version ]($style)"
 
 [python]
 symbol = " "
-format = "[ $symbol$version ]($style)"
+format = "[|$symbol$version ]($style)"
 
 [ruby]
 symbol = " "
-format = "[ $symbol$version ]($style)"
+format = "[|$symbol$version ]($style)"
 
 [rust]
 symbol = " "
-format = "[ $symbol$version ]($style)"
+format = "[|$symbol$version ]($style)"
 
 [swift]
 symbol = "ﯣ "
-format = "[ $symbol$version ]($style)"
+format = "[|$symbol$version ]($style)"
