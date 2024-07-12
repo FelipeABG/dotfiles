@@ -1,5 +1,3 @@
-## FIRST LINE/ROW: Info & Status
-# First param ─┌
 [username]
 format = " [╭─$user]($style)@"
 show_always = true
@@ -14,38 +12,14 @@ ssh_only = false
 style = "bold dimmed red"
 trim_at = "-"
 
-# Third param
 [directory]
 disabled = true
-style = "purple"
-truncate_to_repo = true
-truncation_length = 0
-truncation_symbol = "repo: "
-
-# Fourth param
-[sudo]
-disabled = false
-
-# Before all the version info (python, nodejs, php, etc.)
-[git_status]
-ahead = "⇡${count}"
-behind = "⇣${count}"
-deleted = "x"
-diverged = "⇕⇡${ahead_count}⇣${behind_count}"
-style = "white"
 
 # Last param in the first line/row
 [cmd_duration]
 disabled = false
 format = "took [$duration]($style)"
 min_time = 2_000
-
-# Prompt: optional param 1
-[time]
-disabled = true
-format = " 🕙 $time($style)\n"
-style = "bright-white"
-time_format = "%T"
 
 # Prompt: param 2
 [character]
@@ -62,21 +36,27 @@ symbol = "🔴"
 
 [aws]
 symbol = " "
+format = "[ $symbol$version ]($style)"
 
 [conda]
 symbol = " "
+format = "[ $symbol$version ]($style)"
 
 [dart]
 symbol = " "
+format = "[ $symbol$version ]($style)"
 
 [docker_context]
 symbol = " "
+format = "[ $symbol$version ]($style)"
 
 [elixir]
 symbol = " "
+format = "[ $symbol$version ]($style)"
 
 [elm]
 symbol = " "
+format = "[ $symbol$version ]($style)"
 
 [package]
 disabled = true
@@ -84,42 +64,59 @@ symbol = " 󰏗 "
 
 [git_branch]
 symbol = " "
+format = ' [$symbol$branch(:$remote_branch)]($style) '
+
+[git_status]
+disabled = true
 
 [golang]
 symbol = " "
+format = "[ $symbol$version ]($style)"
 
 [hg_branch]
 symbol = " "
+format = "[ $symbol$version ]($style)"
 
 [java]
 symbol = " "
+format = "[ $symbol$version ]($style)"
 
 [julia]
 symbol = " "
+format = "[ $symbol$version ]($style)"
 
 [nim]
 symbol = " "
+format = "[ $symbol$version ]($style)"
 
 [nix_shell]
 symbol = " "
+format = "[ $symbol$version ]($style)"
 
 [nodejs]
 symbol = "  "
+format = "[ $symbol$version ]($style)"
 
 [perl]
 symbol = " "
+format = "[ $symbol$version ]($style)"
 
 [php]
 symbol = " "
+format = "[ $symbol$version ]($style)"
 
 [python]
 symbol = " "
+format = "[ $symbol$version ]($style)"
 
 [ruby]
 symbol = " "
+format = "[ $symbol$version ]($style)"
 
 [rust]
 symbol = " "
+format = "[ $symbol$version ]($style)"
 
 [swift]
 symbol = "ﯣ "
+format = "[ $symbol$version ]($style)"
