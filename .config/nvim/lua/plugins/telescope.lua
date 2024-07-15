@@ -9,6 +9,7 @@ return {
       vim.keymap.set("n", "L", builtin.live_grep, {})
     end,
   },
+
   {
     "nvim-telescope/telescope-ui-select.nvim",
     config = function()
@@ -30,4 +31,5 @@ return {
       require("telescope").load_extension("ui-select")
     end,
   },
+
 }
