@@ -1,23 +1,9 @@
 ---
 
 # Dotfiles
+This repository contains my personal configuration files for various tools and applications that I use on a daily basis. Below there is instructions on how to set up and use these configurations.
 
-Welcome to my dotfiles repository! This repository contains my personal configuration files for various tools and applications that I use on a daily basis. Below you will find instructions on how to set up and use these configurations.
-
-> **Note**: Arch Linux is used as an example for the installation of the tools. Adapt it to your own system.
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Installation](#installation)
-- [Tools](#tools)
-  - [Neovim](#neovim)
-  - [Zsh](#zsh)
-  - [Alacritty](#alacritty)
-  - [Tmux](#tmux)
-  - [Starship](#starship)
-- [Customization](#customization)
-- [Credits](#credits)
+> **Note**: Arch Linux is used as an example for the installation of the tools. Adapt it to the used system.
 
 ## Overview
 
@@ -32,8 +18,6 @@ This repository contains configuration files for the following tools:
 ## Installation
 
 ### Clone the Repository
-
-
 
 Clone this repository to your home directory:
 
@@ -116,7 +100,7 @@ stow .
 
 ## Customization
 
-Feel free to customize these configuration files to suit your needs. Each file is well-commented to help you understand what each setting does. Additionally, you can refer to the documentation for each tool for more options and details on customization:
+Feel free to customize these configuration files. Additionally, refer to the documentation for each tool for more options and details on customization:
 
 - [Neovim Documentation](https://neovim.io/doc/)
 - [Zsh Documentation](https://zsh.sourceforge.io/Doc/)
@@ -124,7 +108,4 @@ Feel free to customize these configuration files to suit your needs. Each file i
 - [Tmux Documentation](https://github.com/tmux/tmux/wiki)
 - [Starship Documentation](https://starship.rs/)
 
-## Credits
-
-Many of the configurations and ideas in these dotfiles were inspired by other developers and various online resources. Special thanks to the open-source community for sharing their setups and tips.
 
