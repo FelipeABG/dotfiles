@@ -42,9 +42,9 @@ magenta = "0xfae4fc"
 cyan = "0x89ddff"
 white = "0xffffff"
 
-[shell]
-program = "tmux"
-args = ["new-session", "-A", "-s", "main"]
+# [shell]
+# program = "tmux"
+# args = ["new-session", "-A", "-s", "main"]
 
 [window]
 opacity = 0.95
