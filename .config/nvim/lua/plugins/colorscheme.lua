@@ -15,5 +15,7 @@ return {
     vim.cmd("hi! Identifier guifg=#e4f0fb")
     vim.cmd("hi! @property guifg=#e4f0fb")
     vim.cmd("hi! @boolean guifg=#d0679d")
+    vim.cmd("hi! @constructor.python guifg=#7c5295")
+    vim.cmd("hi! @punctuation.bracket guifg=#f1e05a")
   end
 }
