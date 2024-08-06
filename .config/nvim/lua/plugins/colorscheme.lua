@@ -8,7 +8,7 @@ return {
       disable_background = true,
     }
   end,
-  -- optionally set the colorscheme within lazy config
+
   init = function()
     vim.cmd("colorscheme poimandres")
     vim.cmd("hi! Identifier guifg=#e4f0fb")
@@ -18,5 +18,6 @@ return {
     vim.cmd("hi! @constructor.python guifg=#89ddff")
     vim.cmd("hi! @punctuation.bracket guifg=#fffac2")
     vim.cmd("hi! @keyword.import guifg=#54e2c7")
+    vim.cmd("hi! MatchParen guibg=# guifg=#E2C6F3")
   end
 }
