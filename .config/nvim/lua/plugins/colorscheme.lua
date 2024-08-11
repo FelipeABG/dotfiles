@@ -19,5 +19,7 @@ return {
     vim.cmd("hi! @punctuation.bracket guifg=#fffac2")
     vim.cmd("hi! @keyword.import guifg=#54e2c7")
     vim.cmd("hi! MatchParen guibg=# guifg=#E2C6F3")
+    vim.cmd("hi! FloatBorder guifg=#303340")
+    vim.cmd("hi! @lsp.typemod.class.public.java guifg=#5fb3a1")
   end
 }
