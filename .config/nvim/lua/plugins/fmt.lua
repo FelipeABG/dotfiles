@@ -19,8 +19,8 @@ return {
         html = { "htmlbeautifier" },
         rust = { "rustfmt" },
         css = { { "prettierd", "prettier" } },
-        tex = { "latexindent" },
         python = { "black" },
+        go = { "gofmt" },
       },
     })
   end,
