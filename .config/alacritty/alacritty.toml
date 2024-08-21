@@ -47,7 +47,7 @@ program = "tmux"
 args = ["new-session", "-A", "-s", "main"]
 
 [window]
-opacity = 0.95
+opacity = 1
 padding.x = 10
 padding.y = 10
 decorations = "None"

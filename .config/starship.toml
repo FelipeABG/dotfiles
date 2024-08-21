@@ -38,9 +38,9 @@ symbol = "  "
 symbol = " "
 format = "[|$symbol$version ]($style)"
 
-[conda]
-symbol = " "
-format = "[|$symbol$version ]($style)"
+[c]
+symbol = "  "
+format = "[ |$symbol$version ](#6a9dd3)"
 
 [lua]
 symbol = '  '
@@ -83,7 +83,7 @@ format = "[|$symbol$version ]($style)"
 
 [java]
 symbol = "  "
-format = "[|$symbol$version ]($style)"
+format = "[ |$symbol$version ](#fbd1a0)"
 
 [julia]
 symbol = "  "
@@ -119,7 +119,7 @@ format = "[|$symbol$version ]($style)"
 
 [rust]
 symbol = "  "
-format = "[|$symbol$version ]($style)"
+format = "[|$symbol$version ](#f75208)"
 
 [swift]
 symbol = "ﯣ "
