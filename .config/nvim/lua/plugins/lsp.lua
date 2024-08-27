@@ -20,6 +20,9 @@ return {
     local lsp = require("lsp-zero")
     local lspkind = require("lspkind")
     local window = require("lspconfig.ui.windows")
+    local lspconfig = require("lspconfig")
+
+    lspconfig.gleam.setup({})
 
     window.default_options.border = "single"
 

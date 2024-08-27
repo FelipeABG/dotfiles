@@ -19,7 +19,7 @@ This repository contains configuration files for the following tools:
 
 ### Clone the Repository
 
-Clone this repository to your home directory:
+> **Note**: Clone this repository to your home directory:
 
 ```sh
 git clone https://github.com/FelipeABG/dotfiles
