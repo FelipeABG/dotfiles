@@ -18,7 +18,7 @@ disabled = true
 # Last param in the first line/row
 [cmd_duration]
 disabled = false
-format = "took [$duration]($style)"
+format = " took [$duration]($style)"
 min_time = 2_000
 
 # Prompt: param 2
@@ -48,19 +48,19 @@ format = "[ |$symbol$version ]($style)"
 
 [dart]
 symbol = " "
-format = "[|$symbol$version ]($style)"
+format = "[ |$symbol$version ]($style)"
 
 [docker_context]
 symbol = " "
-format = "[|$symbol$version ]($style)"
+format = "[ |$symbol$version ]($style)"
 
 [elixir]
 symbol = " "
-format = "[|$symbol$version ]($style)"
+format = "[ |$symbol$version ]($style)"
 
 [elm]
 symbol = " "
-format = "[|$symbol$version ]($style)"
+format = "[ |$symbol$version ]($style)"
 
 [package]
 disabled = true
@@ -68,7 +68,7 @@ symbol = " 󰏗 "
 
 [git_branch]
 symbol = " "
-format = ' [| $symbol$branch(:$remote_branch)]($style) '
+format = ' [| $symbol$branch(:$remote_branch)]($style)'
 
 [git_status]
 disabled = true
@@ -79,7 +79,7 @@ format = "[ |$symbol$version ]($style)"
 
 [gleam]
 symbol = "  "
-format = "[|$symbol$version ](#ffaff3)"
+format = "[ |$symbol$version ](#ffaff3)"
 
 [hg_branch]
 symbol = "  "
@@ -103,7 +103,7 @@ format = "[|$symbol$version ]($style)"
 
 [nodejs]
 symbol = "  "
-format = "[|$symbol$version ]($style)"
+format = "[ |$symbol$version ]($style)"
 
 [perl]
 symbol = " "
@@ -123,7 +123,7 @@ format = "[|$symbol$version ]($style)"
 
 [rust]
 symbol = "  "
-format = "[|$symbol$version ](#f75208)"
+format = "[ |$symbol$version ](#f75208)"
 
 [swift]
 symbol = "ﯣ "

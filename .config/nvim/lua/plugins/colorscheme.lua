@@ -1,25 +1,15 @@
 return {
-  'olivercederborg/poimandres.nvim',
-  lazy = false,
+  "loctvl842/monokai-pro.nvim",
   priority = 1000,
   config = function()
-    require('poimandres').setup {
-      disable_float_background = true,
-      disable_background = true,
-    }
-  end,
-
-  init = function()
-    vim.cmd("colorscheme poimandres")
-    vim.cmd("hi! Identifier guifg=#e4f0fb")
-    vim.cmd("hi! @property guifg=#e4f0fb")
-    vim.cmd("hi! @boolean guifg=#d0679d")
-    vim.cmd("hi! @constructor guifg=#fffac2")
-    vim.cmd("hi! @constructor.python guifg=#89ddff")
-    vim.cmd("hi! @punctuation.bracket guifg=#fffac2")
-    vim.cmd("hi! MatchParen guibg=# guifg=#E2C6F3")
-    vim.cmd("hi! FloatBorder guifg=#303340")
-    vim.cmd("hi! @lsp.typemod.class.public.java guifg=#e4f0fb")
-    vim.cmd("hi! @keyword.import guifg=#fea0c4")
+    require("monokai-pro").setup({
+      transparent_background = true,
+      terminal_colors = true,
+      background_clear = {
+        "float_win",
+        "telescope",
+      },
+    })
+    vim.cmd("colorscheme monokai-pro")
   end
 }
