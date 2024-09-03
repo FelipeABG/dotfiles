@@ -54,7 +54,8 @@ return {
         "rust_analyzer",
         "lua_ls",
         "jdtls",
-        "pyright"
+        "pyright",
+        "gopls"
       },
       handlers = {
         lsp.default_setup,
