@@ -50,7 +50,7 @@ args = ["new-session", "-A", "-s", "main"]
 opacity = 0.95
 padding.x = 10
 padding.y = 10
-decorations = "Buttonless"
+decorations = "None"
 startup_mode = "maximized" 
 
 [font]
