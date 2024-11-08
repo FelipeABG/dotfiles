@@ -15,7 +15,6 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = ","
 vim.opt.fillchars = { eob = " " }
 
-vim.keymap.set("n", "<leader>s", ":wall<CR>")
 vim.keymap.set("v", "<Tab>", ">gv")
 vim.keymap.set("v", "<S-Tab>", "<gv")
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
