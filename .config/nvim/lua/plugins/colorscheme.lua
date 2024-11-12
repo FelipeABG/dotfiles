@@ -11,5 +11,6 @@ return {
 			},
 		})
 		vim.cmd("colorscheme monokai-pro")
+		vim.cmd(":hi! LspInlayHint guibg=#00000000, guifg=#727072")
 	end,
 }
