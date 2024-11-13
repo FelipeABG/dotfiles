@@ -1,16 +1,16 @@
 return {
-	"loctvl842/monokai-pro.nvim",
+	"rebelot/kanagawa.nvim",
 	priority = 1000,
 	config = function()
-		require("monokai-pro").setup({
-			transparent_background = true,
-			terminal_colors = true,
-			background_clear = {
-				"float_win",
-				"telescope",
+		require("kanagawa").setup({
+			transparent = true,
+			terminalColors = true,
+			theme = "dragon",
+			colors = {
+				theme = { all = { ui = { bg_gutter = "none" } } },
 			},
 		})
-		vim.cmd("colorscheme monokai-pro")
+		vim.cmd("colorscheme kanagawa")
 		vim.cmd(":hi! LspInlayHint guibg=#00000000, guifg=#727072")
 	end,
 }
