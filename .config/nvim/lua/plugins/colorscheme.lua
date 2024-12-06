@@ -1,16 +1,12 @@
 return {
-	"rebelot/kanagawa.nvim",
+	"sainnhe/gruvbox-material",
+	lazy = false,
 	priority = 1000,
 	config = function()
-		require("kanagawa").setup({
-			transparent = true,
-			terminalColors = true,
-			theme = "dragon",
-			colors = {
-				theme = { all = { ui = { bg_gutter = "none" } } },
-			},
-		})
-		vim.cmd("colorscheme kanagawa")
-		vim.cmd(":hi! LspInlayHint guibg=#00000000, guifg=#727072")
+		vim.g.gruvbox_material_background = "hard"
+		vim.g.gruvbox_material_enable_italic = 1
+		vim.g.gruvbox_material_enable_bold = 1
+		vim.g.gruvbox_material_float_style = "dim"
+		vim.cmd.colorscheme("gruvbox-material")
 	end,
 }

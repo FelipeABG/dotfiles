@@ -106,7 +106,9 @@ return {
 			},
 
 			window = {
-				completion = cmp.config.window.bordered(),
+				completion = cmp.config.window.bordered({
+					winhighlight = "Normal:Normal,FloatBorder:Normal",
+				}),
 				documentation = cmp.config.window.bordered(),
 			},
 
