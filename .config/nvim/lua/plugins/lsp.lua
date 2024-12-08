@@ -31,7 +31,7 @@ return {
 				vim.lsp.buf.references()
 			end, opts, { desc = "LSP Goto Reference" })
 
-			vim.keymap.set("n", "<leader>gd", function()
+			vim.keymap.set("n", "gd", function()
 				vim.lsp.buf.definition()
 			end, opts, { desc = "LSP Goto Definition" })
 
