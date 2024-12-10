@@ -2,7 +2,7 @@ return {
 	{
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.5",
-		dependencies = { "nvim-lua/plenary.nvim" },
+		dependencies = { "nvim-lua/plenary.nvim", { "nvim-telescope/telescope-fzf-native.nvim", build = "make" } },
 		config = function()
 			require("telescope").setup({
 				pickers = {
@@ -11,7 +11,12 @@ return {
 						no_ignore = true,
 					},
 				},
+				extensions = {
+					fzf = {},
+				},
 			})
+
+			require("telescope").load_extension("fzf")
 
 			vim.api.nvim_create_autocmd("FileType", {
 				pattern = "TelescopeResults",
@@ -32,9 +37,6 @@ return {
 					["ui-select"] = {
 						require("telescope.themes").get_dropdown({}),
 					},
-				},
-				load_extension = {
-					"harpoon",
 				},
 			})
 			require("telescope").load_extension("ui-select")
