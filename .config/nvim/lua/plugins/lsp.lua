@@ -42,6 +42,10 @@ return {
 			vim.keymap.set("n", "<leader>ca", function()
 				vim.lsp.buf.code_action()
 			end, opts, { desc = "LSP Code Action" })
+
+			vim.keymap.set("n", "<leader>d", function()
+				vim.diagnostic.open_float()
+			end, opts, { desc = "LSP full diagnostic window" })
 		end)
 
 		require("mason").setup({})

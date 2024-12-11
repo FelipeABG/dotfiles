@@ -42,7 +42,7 @@ background = "0x303340"
 text = "CellBackground"
 cursor = "CellForeground"
 
-[shell]
+[terminal.shell]
 program = "tmux"
 args = ["new-session", "-A", "-s", "main"]
 
@@ -60,3 +60,5 @@ size = 15
 
 [env]
 term = "xterm-256color"
+
+[terminal]
