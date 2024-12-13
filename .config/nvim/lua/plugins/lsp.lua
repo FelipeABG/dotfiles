@@ -22,7 +22,6 @@ return {
 		local window = require("lspconfig.ui.windows")
 
 		window.default_options.border = "single"
-		vim.lsp.inlay_hint.enable()
 
 		lsp.on_attach(function(client, bufnr)
 			local opts = { buffer = bufnr, remap = false }
