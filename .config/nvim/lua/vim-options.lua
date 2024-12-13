@@ -9,7 +9,8 @@ vim.cmd("set relativenumber")
 vim.cmd("set termguicolors")
 vim.cmd("set updatetime=50")
 vim.cmd("set pumheight=15")
-vim.cmd(":set foldopen-=block")
+vim.cmd("set foldopen-=block")
+vim.cmd("set foldtext=MyFoldText()")
 
 vim.o.hlsearch = false
 vim.g.mapleader = " "

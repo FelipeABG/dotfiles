@@ -39,7 +39,7 @@ return {
 				vim.lsp.buf.hover()
 			end, opts, { desc = "LSP Hover" })
 
-			vim.keymap.set("n", "<leader>ca", function()
+			vim.keymap.set("n", "ca", function()
 				vim.lsp.buf.code_action()
 			end, opts, { desc = "LSP Code Action" })
 
