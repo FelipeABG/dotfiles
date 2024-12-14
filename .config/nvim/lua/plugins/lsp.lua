@@ -43,7 +43,7 @@ return {
 			end, opts, { desc = "LSP Code Action" })
 
 			vim.keymap.set("n", "<leader>d", function()
-				vim.diagnostic.open_float()
+				vim.diagnostic.open_float({ border = "rounded" })
 			end, opts, { desc = "LSP full diagnostic window" })
 		end)
 
