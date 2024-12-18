@@ -36,3 +36,11 @@ vim.api.nvim_create_autocmd("TermOpen", {
 		vim.cmd("startinsert")
 	end,
 })
+
+vim.api.nvim_create_autocmd("TermClose", {
+	group = vim.api.nvim_create_augroup("term-close", { clear = true }),
+	callback = function()
+		vim.opt.number = true
+		vim.opt.relativenumber = true
+	end,
+})
