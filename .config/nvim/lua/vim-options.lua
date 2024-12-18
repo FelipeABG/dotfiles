@@ -27,3 +27,12 @@ vim.keymap.set("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 vim.keymap.set("n", "U", "<C-r>")
 vim.keymap.set("n", "<leader>f", ":set foldmethod=indent<CR> :set foldnestmax=2<CR>")
 vim.keymap.set("t", "<Esc>", "<C-\\><C-N>")
+
+vim.api.nvim_create_autocmd("TermOpen", {
+	group = vim.api.nvim_create_augroup("term-open", { clear = true }),
+	callback = function()
+		vim.opt.number = false
+		vim.opt.relativenumber = false
+		vim.cmd("startinsert")
+	end,
+})
