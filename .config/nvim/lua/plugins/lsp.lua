@@ -27,7 +27,7 @@ return {
 			local opts = { buffer = bufnr, remap = false }
 
 			vim.keymap.set("n", "gr", function()
-				vim.lsp.buf.references()
+				vim.cmd("Telescope lsp_references")
 			end, opts, { desc = "LSP Goto Reference" })
 
 			vim.keymap.set("n", "gd", function()
