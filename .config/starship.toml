@@ -1,15 +1,15 @@
 [username]
 format = " [╭─$user]($style)@"
 show_always = true
-style_root = "#d3c6aa"
-style_user = "#d3c6aa"
+style_root = "#a5bfcc"
+style_user = "#a5bfcc"
 
 # Second param
 [hostname]
 disabled = false
 format = "[$hostname]($style)"
 ssh_only = false
-style = "#a89e88"
+style = "#7e99a3"
 trim_at = "-"
 
 [directory]
@@ -24,7 +24,7 @@ min_time = 2_000
 # Prompt: param 2
 [character]
 error_symbol = " [×](#d2bd96)"
-success_symbol = " [╰─λ](#d3c6aa)"
+success_symbol = " [╰─λ](#a5bfcc)"
 
 # SYMBOLS
 [status]
@@ -36,31 +36,31 @@ symbol = "  "
 
 [aws]
 symbol = " "
-format = "[|$symbol$version ](#868f8f)"
+format = "[|$symbol$version ](#46585b)"
 
 [c]
 symbol = "  "
-format = "[|$symbol$version ](#868f8f)"
+format = "[|$symbol$version ](#46585b)"
 
 [lua]
 symbol = '  '
-format = "[ |$symbol$version ](#868f8f)"
+format = "[ |$symbol$version ](#46585b)"
 
 [dart]
 symbol = " "
-format = "[ |$symbol$version ](#868f8f)"
+format = "[ |$symbol$version ](#46585b)"
 
 [docker_context]
 symbol = " "
-format = "[ |$symbol$version ](#868f8f)"
+format = "[ |$symbol$version ](#46585b)"
 
 [elixir]
 symbol = " "
-format = "[ |$symbol$version ](#868f8f)"
+format = "[ |$symbol$version ](#46585b)"
 
 [elm]
 symbol = " "
-format = "[ |$symbol$version ](#868f8f)"
+format = "[ |$symbol$version ](#46585b)"
 
 [package]
 disabled = true
@@ -69,63 +69,63 @@ symbol = " 󰏗 "
 [git_branch]
 symbol = " "
 format = ' [| $symbol$branch(:$remote_branch)]($style)'
-style = "#868f8f"
+style = "#46585b"
 
 [git_status]
 disabled = true
 
 [golang]
 symbol = "  "
-format = "[ |$symbol$version ](#868f8f)"
+format = "[ |$symbol$version ](#46585b)"
 
 [gleam]
 symbol = "  "
-format = "[ |$symbol$version ](#868f8f)"
+format = "[ |$symbol$version ](#46585b)"
 
 [hg_branch]
 symbol = "  "
-format = "[|$symbol$version ](#868f8f)"
+format = "[|$symbol$version ](#46585b)"
 
 [java]
 symbol = "  "
-format = "[ |$symbol$version ](#868f8f)"
+format = "[ |$symbol$version ](#46585b)"
 
 [julia]
 symbol = "  "
-format = "[|$symbol$version ](#868f8f)"
+format = "[|$symbol$version ](#46585b)"
 
 [nim]
 symbol = "  "
-format = "[|$symbol$version ](#868f8f)"
+format = "[|$symbol$version ](#46585b)"
 
 [nix_shell]
 symbol = "  "
-format = "[|$symbol$version ](#868f8f)"
+format = "[|$symbol$version ](#46585b)"
 
 [nodejs]
 symbol = "  "
-format = "[ |$symbol$version ](#868f8f)"
+format = "[ |$symbol$version ](#46585b)"
 
 [perl]
 symbol = " "
-format = "[|$symbol$version ](#868f8f)"
+format = "[|$symbol$version ](#46585b)"
 
 [php]
 symbol = " "
-format = "[|$symbol$version ](#868f8f)"
+format = "[|$symbol$version ](#46585b)"
 
 [python]
 symbol = "  "
-format = "[ |$symbol$version ](#868f8f)"
+format = "[ |$symbol$version ](#46585b)"
 
 [ruby]
 symbol = " "
-format = "[|$symbol$version ](#868f8f)"
+format = "[|$symbol$version ](#46585b)"
 
 [rust]
 symbol = "  "
-format = "[ |$symbol$version ](#868f8f)"
+format = "[ |$symbol$version ](#46585b)"
 
 [swift]
 symbol = "ﯣ "
-format = "[|$symbol$version ](#868f8f)"
+format = "[|$symbol$version ](#46585b)"
