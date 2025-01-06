@@ -1,6 +1,6 @@
 background = 1c2021
 
-initial-command = "tmux new-session -A -s main"
+initial-command = "/opt/homebrew/bin/tmux new-session -A -s main"
 
 font-size = 15
 
