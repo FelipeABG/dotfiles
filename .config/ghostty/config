@@ -1,6 +1,6 @@
 background = 1c2021
 
-initial-command = "tmux new-session -A -s main"
+initial-command = "$(which tmux) new-session -A -s main"
 
 font-family = "GeistMonoNF"
 font-style = "Medium"
