@@ -1,15 +1,15 @@
 [username]
 format = " [╭─$user]($style)@"
 show_always = true
-style_root = "#a5bfcc"
-style_user = "#a5bfcc"
+style_root = "#d699b6"
+style_user = "#d699b6"
 
 # Second param
 [hostname]
 disabled = false
 format = "[$hostname]($style)"
 ssh_only = false
-style = "#7e99a3"
+style = "#7fbbb3"
 trim_at = "-"
 
 [directory]
@@ -24,7 +24,7 @@ min_time = 2_000
 # Prompt: param 2
 [character]
 error_symbol = " [×](#d2bd96)"
-success_symbol = " [╰─λ](#a5bfcc)"
+success_symbol = " [╰─λ](#d699b6)"
 
 # SYMBOLS
 [status]
