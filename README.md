@@ -71,7 +71,7 @@ stow .
 
 ### Ghostty
 
-**Configuration File**: `.config/ghostty/conf`
+**Configuration File**: `.config/ghostty/config`
 
 - Ensure you have Ghostty installed. You can find installation instructions [here](https://ghostty.org/download).
 
