@@ -11,7 +11,7 @@ This repository contains configuration files for the following tools:
 
 - **Neovim**: Text editor
 - **Zsh**: Shell
-- **Alacritty**: Terminal emulator
+- **Ghostty**: Terminal emulator
 - **Tmux**: Terminal multiplexer
 - **Starship**: Shell prompt
 
@@ -69,11 +69,11 @@ stow .
   source ~/.zshrc
   ```
 
-### Alacritty
+### Ghostty
 
-**Configuration File**: `.config/alacritty/alacritty.toml`
+**Configuration File**: `.config/ghostty/conf`
 
-- Ensure you have Alacritty installed. You can find installation instructions [here](https://github.com/alacritty/alacritty).
+- Ensure you have Ghostty installed. You can find installation instructions [here](https://ghostty.org/download).
 
 ### Tmux
 
@@ -104,7 +104,7 @@ Feel free to customize these configuration files. Additionally, refer to the doc
 
 - [Neovim Documentation](https://neovim.io/doc/)
 - [Zsh Documentation](https://zsh.sourceforge.io/Doc/)
-- [Alacritty Documentation](https://github.com/alacritty/alacritty/blob/master/README.md)
+- [Ghostty Documentation](https://ghostty.org/docs)
 - [Tmux Documentation](https://github.com/tmux/tmux/wiki)
 - [Starship Documentation](https://starship.rs/)
 
