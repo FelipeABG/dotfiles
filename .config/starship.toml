@@ -1,3 +1,5 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
 [username]
 format = " [╭─$user]($style)@"
 show_always = true
@@ -7,13 +9,17 @@ style_user = "#d699b6"
 # Second param
 [hostname]
 disabled = false
-format = "[$hostname]($style)"
+format = "[$hostname]($style) "
 ssh_only = false
 style = "#7fbbb3"
 trim_at = "-"
 
 [directory]
-disabled = true
+disabled = false
+truncation_length = 5
+truncate_to_repo = false
+format = "[$path]($style)"
+style = "#46585b"
 
 # Last param in the first line/row
 [cmd_duration]
