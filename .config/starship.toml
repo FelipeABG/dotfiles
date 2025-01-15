@@ -21,10 +21,13 @@ truncate_to_repo = false
 format = "[$path]($style)"
 style = "#46585b"
 
+[battery]
+disabled = true
+
 # Last param in the first line/row
 [cmd_duration]
 disabled = false
-format = " [$duration](#d3c6aa)"
+format = "[ | $duration](#46585b)"
 min_time = 2_000
 
 # Prompt: param 2
