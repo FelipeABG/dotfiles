@@ -2,7 +2,7 @@ background = 1c2021
 
 initial-command = "$(which tmux) new-session -A -s main"
 
-font-family = "Geist Mono"
+font-family = "GeistMonoNF"
 font-style = "Medium"
 font-size = 15
 
