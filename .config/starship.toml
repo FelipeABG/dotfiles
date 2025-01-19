@@ -3,20 +3,20 @@
 [username]
 format = " [╭─$user]($style)@"
 show_always = true
-style_root = "#fefbf1 medium"
-style_user = "#fefbf1 medium"
+style_root = "#e67e80 bold"
+style_user = "#e67e80 bold"
 
 # Prompt: param 2
 [character]
-error_symbol = " [×](#fefbf1 medium)"
-success_symbol = " [╰─λ](#fefbf1 medium)"
+error_symbol = " [×](#e67e80 bold)"
+success_symbol = " [╰─λ](#e67e80 bold)"
 
 # Second param
 [hostname]
 disabled = false
 format = "[$hostname]($style) "
 ssh_only = false
-style = "#fefbf1 medium"
+style = "#e67e80 bold"
 trim_at = "-"
 
 [directory]
