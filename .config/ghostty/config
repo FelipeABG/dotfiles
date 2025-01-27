@@ -4,7 +4,7 @@ initial-command = "$(which tmux) new-session -A -s main"
 
 font-family = "GeistMonoNF"
 font-style = "Medium"
-font-size = 15
+font-size = 14
 
 window-decoration = false
 window-padding-x = 10
