@@ -4,9 +4,10 @@ return {
 		local luasnip = require("luasnip")
 		local extras = require("luasnip.extras")
 
-		-- Set html snips to work with htmldjango and vice-versa
+		-- Set html snips to work with other extensions
 		luasnip.filetype_extend("htmldjango", { "html" })
 		luasnip.filetype_extend("html", { "htmldjango" })
+		luasnip.filetype_extend("javascriptreact", { "html" })
 
 		local snippet = luasnip.snippet
 		local text = luasnip.text_node
