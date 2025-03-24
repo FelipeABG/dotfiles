@@ -16,6 +16,19 @@ return {
 				},
 			})
 
+			local file_ignore_patterns = {
+				"yarn%.lock",
+				"node_modules/",
+				"raycast/",
+				"dist/",
+				"%.next",
+				"%.git/",
+				"%.gitlab/",
+				"build/",
+				"target/",
+				"package%-lock%.json",
+			}
+
 			require("telescope").load_extension("fzf")
 
 			vim.api.nvim_create_autocmd("FileType", {
@@ -24,8 +37,12 @@ return {
 			})
 
 			local builtin = require("telescope.builtin")
-			vim.keymap.set("n", "S", builtin.find_files, {})
-			vim.keymap.set("n", "L", builtin.live_grep, {})
+			vim.keymap.set("n", "S", function()
+				builtin.find_files({ file_ignore_patterns = file_ignore_patterns })
+			end, {})
+			vim.keymap.set("n", "L", function()
+				builtin.live_grep({ file_ignore_patterns = file_ignore_patterns })
+			end, {})
 			vim.keymap.set("n", "<leader>f", builtin.lsp_dynamic_workspace_symbols, {})
 		end,
 	},
