@@ -11,7 +11,7 @@ return {
 						no_ignore = true,
 					},
 					git_files = {
-						hidden = true, --Set hidden files to show up
+						hidden = true,
 					},
 				},
 				extensions = {
@@ -38,10 +38,16 @@ return {
 				pattern = "TelescopeResults",
 				command = "setlocal nofoldenable",
 			})
-
 			local builtin = require("telescope.builtin")
+
 			vim.keymap.set("n", "S", function()
-				builtin.git_files({})
+				local is_git_dir = vim.fn.system("git rev-parse --is-inside-work-tree"):match("true")
+
+				if is_git_dir then
+					builtin.git_files({})
+				else
+					builtin.find_files({})
+				end
 			end, {})
 			vim.keymap.set("n", "L", function()
 				builtin.live_grep({ file_ignore_patterns = file_ignore_patterns })
