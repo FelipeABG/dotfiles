@@ -23,6 +23,8 @@ return {
 
 		window.default_options.border = "single"
 
+		vim.diagnostic.config({ virtual_text = true })
+
 		lsp.on_attach(function(client, bufnr)
 			local opts = { buffer = bufnr, remap = false }
 
