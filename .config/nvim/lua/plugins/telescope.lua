@@ -10,9 +10,6 @@ return {
 						hidden = true, --Set hidden files to show up
 						no_ignore = true,
 					},
-					git_files = {
-						hidden = true,
-					},
 				},
 				extensions = {
 					fzf = {},
@@ -45,7 +42,12 @@ return {
 			end, {})
 
 			vim.keymap.set("n", "L", function()
-				builtin.live_grep({ file_ignore_patterns = file_ignore_patterns })
+				builtin.live_grep({
+					file_ignore_patterns = file_ignore_patterns,
+					additional_args = function()
+						return { "--hidden" }
+					end,
+				})
 			end, {})
 		end,
 	},
