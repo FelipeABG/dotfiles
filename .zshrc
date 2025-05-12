@@ -15,6 +15,7 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab #Must have fzf installed
+zinit light jeffreytse/zsh-vi-mode
 
 # Add in snippets
 zinit snippet OMZP::git
@@ -49,6 +50,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 #Keybinds
 bindkey "^f" autosuggest-accept
+bindkey -v
 
 #Aliases
 alias c="clear"
@@ -59,5 +61,7 @@ alias ls="ls -a --color"
 
 #CLI tools
 eval "$(zoxide init zsh)"
-eval "$(starship init zsh)"
 eval "$(fzf --zsh)"
+eval "$(starship init zsh)"
+
+. "$HOME/.local/bin/env"
