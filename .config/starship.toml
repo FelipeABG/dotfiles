@@ -9,8 +9,8 @@ style_user = "#e67e80 bold"
 # Prompt: param 2
 [character]
 error_symbol = " [×](#e67e80 bold)"
-success_symbol = " [╰─λ](#e67e80 bold)"
-vimcmd_symbol = " [╰─λ](#e67e80 bold)"
+success_symbol = " [╰─I](#e67e80 bold)"
+vimcmd_symbol = " [╰─N](#e67e80 bold)"
 
 # Second param
 [hostname]
