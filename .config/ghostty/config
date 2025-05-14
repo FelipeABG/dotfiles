@@ -6,7 +6,8 @@ font-family = "GeistMonoNF"
 font-style = "Medium"
 font-size = 14
 
-window-decoration = false
+macos-titlebar-style = hidden
+window-decoration = false 
 window-padding-x = 10
 window-padding-y = 10
 
