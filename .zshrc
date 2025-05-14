@@ -64,4 +64,3 @@ eval "$(zoxide init zsh)"
 eval "$(fzf --zsh)"
 eval "$(starship init zsh)"
 
-. "$HOME/.local/bin/env"
