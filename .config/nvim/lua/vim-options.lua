@@ -44,3 +44,7 @@ vim.api.nvim_create_autocmd("TermClose", {
 		vim.opt.relativenumber = true
 	end,
 })
+
+vim.keymap.set("n", "P", function()
+	vim.diagnostic.enable(not vim.diagnostic.is_enabled())
+end, { silent = true, noremap = true })
