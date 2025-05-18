@@ -17,7 +17,7 @@ return {
 				markdown = { "prettier" },
 				rust = { "rustfmt" },
 				css = { "prettier" },
-				python = { "black" },
+				python = { "ruff" },
 				go = { "gofmt" },
 			},
 		})
