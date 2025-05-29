@@ -1,6 +1,7 @@
 ---
 
 # Dotfiles
+
 This repository contains my personal configuration files for various tools and applications that I use on a daily basis. Below there is instructions on how to set up and use these configurations.
 
 > **Note**: Arch Linux is used as an example for the installation of the tools. Adapt it to the used system.
@@ -29,6 +30,7 @@ cd ~/dotfiles
 ### Use GNU Stow to Manage Dotfiles
 
 Make sure you have `stow` installed:
+
 ```
 sudo pacman -S stow
 ```
@@ -58,12 +60,10 @@ stow .
 **Configuration File**: `.zshrc`
 
 - Ensure you have Zsh installed. If not, you can install it by following the instructions [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH).
-  
-- The config uses `fzf` and `zoxide` as dependencies, so make sure you have it installed: 
+- The config uses `fzf` and `zoxide` as dependencies, so make sure you have it installed:
   ```sh
   sudo pacman -S fzf zoxide
   ```
-  
 - After installing, source the `.zshrc` file:
   ```sh
   source ~/.zshrc
@@ -83,7 +83,6 @@ stow .
   ```sh
   sudo pacman -S tmux
   ```
-  
 - Reload the Tmux configuration by running:
   ```sh
   tmux source tmux.conf
@@ -107,5 +106,3 @@ Feel free to customize these configuration files. Additionally, refer to the doc
 - [Ghostty Documentation](https://ghostty.org/docs)
 - [Tmux Documentation](https://github.com/tmux/tmux/wiki)
 - [Starship Documentation](https://starship.rs/)
-
-

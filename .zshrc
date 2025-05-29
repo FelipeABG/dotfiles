@@ -12,8 +12,6 @@ source "${ZINIT_HOME}/zinit.zsh"
 
 #Plugins
 zinit light zsh-users/zsh-syntax-highlighting
-zinit light zsh-users/zsh-completions
-zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab #Must have fzf installed
 zinit light jeffreytse/zsh-vi-mode
 
@@ -49,7 +47,6 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 #Keybinds
-bindkey "^f" autosuggest-accept
 bindkey -v
 
 #Aliases
