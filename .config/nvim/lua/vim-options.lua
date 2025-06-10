@@ -29,23 +29,6 @@ vim.keymap.set("n", "<leader>f", ":set foldmethod=indent<CR> :set foldnestmax=2<
 vim.keymap.set("t", "<Esc>", "<C-\\><C-N>")
 vim.keymap.set("n", "K", ":suspend<CR>")
 
-vim.api.nvim_create_autocmd("TermOpen", {
-	group = vim.api.nvim_create_augroup("term-open", { clear = true }),
-	callback = function()
-		vim.opt.number = false
-		vim.opt.relativenumber = false
-		vim.cmd("startinsert")
-	end,
-})
-
-vim.api.nvim_create_autocmd("TermClose", {
-	group = vim.api.nvim_create_augroup("term-close", { clear = true }),
-	callback = function()
-		vim.opt.number = true
-		vim.opt.relativenumber = true
-	end,
-})
-
 vim.keymap.set("n", "P", function()
 	vim.diagnostic.enable(not vim.diagnostic.is_enabled())
 end, { silent = true, noremap = true })
