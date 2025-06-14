@@ -46,7 +46,17 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
+# Setting commands history with fzf
+__fzf-history-widget() {
+  BUFFER=$(fc -l 1 | fzf --tac --no-sort --reverse --prompt="History> " --height=40%) || return
+  CURSOR=$#BUFFER
+  zle accept-line
+}
+zle -N __fzf-history-widget
+
+
 #Keybinds
+bindkey '^R' __fzf-history-widget
 bindkey -v
 
 #Aliases
