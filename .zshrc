@@ -60,8 +60,6 @@ bindkey '^R' __fzf-history-widget
 bindkey -v
 
 #Aliases
-alias c="clear"
-alias e="exit"
 alias v="nvim"
 alias vim="nvim"
 alias ls="ls -a --color"
