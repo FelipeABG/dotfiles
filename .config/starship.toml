@@ -1,23 +1,23 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 [username]
-format = " [╭─$user]($style)[@](#464849)"
+format = " [╭─$user]($style)[@](#797f7e)"
 show_always = true
-style_root = "#e6b94f"
-style_user = "#e6b94f"
+style_root = "#797f7e"
+style_user = "#797f7e"
 
 # Prompt: param 2
 [character]
-error_symbol = " [×](#e6b94f)"
-success_symbol = " [╰─I](#e6b94f)"
-vimcmd_symbol = " [╰─N](#e6b94f)"
+error_symbol = " [×](#797f7e)"
+success_symbol = " [╰─I](#797f7e)"
+vimcmd_symbol = " [╰─N](#797f7e)"
 
 # Second param
 [hostname]
 disabled = false
 format = "[$hostname]($style) "
 ssh_only = false
-style = "#849f99"
+style = "#797f7e"
 trim_at = "-"
 
 [directory]
