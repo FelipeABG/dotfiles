@@ -1,4 +1,4 @@
-background = #262626
+background = #1e2021
 initial-command = "$(which tmux) new-session -A -s main"
 
 font-family = "GeistMonoNF"
