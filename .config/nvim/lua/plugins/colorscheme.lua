@@ -1,5 +1,6 @@
 return {
 	"sainnhe/everforest",
+	dependencies = "stevearc/dressing.nvim", --Code actions UI
 	lazy = false,
 	priority = 1000,
 	config = function()
@@ -15,5 +16,6 @@ return {
 		for _, hl in ipairs(hl_groups) do
 			vim.cmd.highlight(hl .. " gui=underline")
 		end
+		require("dressing").setup()
 	end,
 }
