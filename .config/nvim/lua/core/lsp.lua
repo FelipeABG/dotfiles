@@ -16,8 +16,8 @@ vim.lsp.config("rust_analyzer", {
 	root_markers = { "Cargo.toml" },
 })
 
-vim.lsp.config("pyright", {
-	cmd = { "pyright" },
+vim.lsp.config("ty", {
+	cmd = { "ty", "server" },
 	filetypes = { "python" },
 	root_markers = { ".git", "pyproject.toml" },
 })
@@ -25,6 +25,7 @@ vim.lsp.config("pyright", {
 vim.lsp.enable("lua_ls")
 vim.lsp.enable("ts_ls")
 vim.lsp.enable("rust_analyzer")
+vim.lsp.enable("ty")
 
 vim.diagnostic.config({
 	virtual_text = true,
