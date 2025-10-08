@@ -45,6 +45,8 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
+# Prompt design
+PROMPT='%B%F{#8fb797}%n@%m%f:%F{#46585b}%~%(1j.[%j].) %f$ %b'
 # Keybinds
 bindkey -v
 
@@ -59,4 +61,3 @@ function zvm_after_init() {
   eval "$(fzf --zsh)"
 }
 
-eval "$(starship init zsh)"

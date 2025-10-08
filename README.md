@@ -14,7 +14,6 @@ This repository contains configuration files for the following tools:
 - **Zsh**: Shell
 - **Ghostty**: Terminal emulator
 - **Tmux**: Terminal multiplexer
-- **Starship**: Shell prompt
 
 ## Installation
 
@@ -35,7 +34,9 @@ Make sure you have `stow` installed:
 sudo pacman -S stow
 ```
 
-> **Note**: Before running the `stow` command, make sure you have visited the [Tools](#tools) section and have installed the dependencies required.
+
+> [!WARNING]
+>Before running the `stow` command, make sure you have visited the [Tools](#tools) section and have installed the dependencies required.
 
 To install the configurations, run the following command:
 
@@ -88,18 +89,9 @@ stow .
   tmux source tmux.conf
   ```
 
-### Starship
-
-**Configuration File**: `.config/starship.toml`
-
-- Ensure you have Starship installed. You can install it by running:
-  ```sh
-  curl -sS https://starship.rs/install.sh | sh
-  ```
-
 ## Customization
 
-Feel free to customize these configuration files. Additionally, refer to the documentation for each tool for more options and details on customization:
+Refer to the documentation for each tool for more options and details on customization:
 
 - [Neovim Documentation](https://neovim.io/doc/)
 - [Zsh Documentation](https://zsh.sourceforge.io/Doc/)
