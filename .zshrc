@@ -1,4 +1,4 @@
-#Set the directory we want to store zinit and plugins
+# Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
 # Download Zinit, if it's not there yet
@@ -7,12 +7,12 @@ if [ ! -d "$ZINIT_HOME" ]; then
    git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 fi
 
-#Source/Load zinit
+# Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
-#Plugins
+# Plugins
 zinit light zsh-users/zsh-syntax-highlighting
-zinit light Aloxaf/fzf-tab #Must have fzf installed
+zinit light Aloxaf/fzf-tab  # Must have fzf installed
 zinit light jeffreytse/zsh-vi-mode
 
 # Add in snippets
@@ -21,7 +21,7 @@ zinit snippet OMZP::sudo
 zinit snippet OMZP::archlinux
 zinit snippet OMZP::command-not-found
 
-#Load completionf for zsh-completions
+# Load completions for zsh-completions
 autoload -Uz compinit && compinit
 zinit cdreplay -q
 
@@ -38,7 +38,6 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
-
 # Completion styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
@@ -46,26 +45,18 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
-# Setting commands history with fzf
-__fzf-history-widget() {
-  BUFFER=$(fc -l 1 | fzf --tac --no-sort --reverse --prompt="History> " --height=40%) || return
-  CURSOR=$#BUFFER
-  zle accept-line
-}
-zle -N __fzf-history-widget
-
-
-#Keybinds
-bindkey '^R' __fzf-history-widget
+# Keybinds
 bindkey -v
 
-#Aliases
+# Aliases
 alias v="nvim"
 alias vim="nvim"
 alias ls="ls -a --color"
 
-#CLI tools
-eval "$(zoxide init zsh)"
-eval "$(fzf --zsh)"
-eval "$(starship init zsh)"
+# CLI tools - deferred to run after zsh-vi-mode
+function zvm_after_init() {
+  eval "$(zoxide init zsh)"
+  eval "$(fzf --zsh)"
+}
 
+eval "$(starship init zsh)"
