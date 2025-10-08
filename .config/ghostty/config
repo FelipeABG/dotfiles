@@ -3,12 +3,14 @@ initial-command = "$(which tmux) new-session -A -s main"
 
 font-family = "GeistMonoNF"
 font-style = "Medium"
-font-size = 14
+font-size = 12
 
 macos-titlebar-style = hidden
 window-decoration = false 
 window-padding-x = 10
 window-padding-y = 10
+
+app-notifications = no-clipboard-copy
 
 palette = 0=#2b3339
 palette = 1=#e67e80
