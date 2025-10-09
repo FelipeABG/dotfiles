@@ -3,7 +3,7 @@ initial-command = "$(which tmux) new-session -A -s main"
 
 font-family = "GeistMonoNF"
 font-style = "Medium"
-font-size = 12
+font-size = 12.5
 
 macos-titlebar-style = hidden
 window-decoration = false 
