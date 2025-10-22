@@ -34,7 +34,8 @@ return {
                 "target/",
                 "package%-lock%.json",
                 "migrations/",
-                ".turbo/"
+                ".turbo/",
+                "tmux/plugins"
             }
 
             require("telescope").load_extension("fzf")
@@ -57,6 +58,15 @@ return {
                     end,
                 })
             end, {})
+
+            vim.keymap.set('n', '<leader>cfg', function()
+                require('telescope.builtin').find_files({
+                    prompt_title = "Dotfiles",
+                    cwd = "~/dotfiles",
+                    hidden = true,
+                    file_ignore_patterns = file_ignore_patterns
+                })
+            end, { desc = "Open dotfiles" })
         end,
     },
 }
