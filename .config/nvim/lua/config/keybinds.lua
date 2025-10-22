@@ -8,10 +8,10 @@ vim.keymap.set("n", "<leader>f", ":set foldmethod=indent<CR> :set foldnestmax=2<
 vim.keymap.set("t", "<Esc>", "<C-\\><C-N>")
 vim.keymap.set("n", "K", ":suspend<CR>")
 vim.keymap.set("n", "<leader>lsp", function()
-  vim.diagnostic.enable(not vim.diagnostic.is_enabled())
-  if vim.diagnostic.is_enabled() then
-    print("LSP: On")
-  else
-    print("LSP: Off")
-  end
+    vim.diagnostic.enable(not vim.diagnostic.is_enabled())
+    if vim.diagnostic.is_enabled() then
+        print("LSP: On")
+    else
+        print("LSP: Off")
+    end
 end, { silent = true, noremap = true })
