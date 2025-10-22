@@ -61,5 +61,14 @@ vim.api.nvim_create_autocmd("LspAttach", {
         vim.keymap.set("n", "<leader>d", function()
             vim.diagnostic.open_float({ border = "rounded" })
         end, opts, { desc = "LSP full diagnostic window" })
+
+        vim.keymap.set("n", "<leader>lsp", function()
+            vim.diagnostic.enable(not vim.diagnostic.is_enabled())
+            if vim.diagnostic.is_enabled() then
+                print("LSP: On")
+            else
+                print("LSP: Off")
+            end
+        end, { silent = true, noremap = true })
     end,
 })
