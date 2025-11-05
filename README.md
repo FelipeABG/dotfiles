@@ -34,9 +34,8 @@ Make sure you have `stow` installed:
 sudo pacman -S stow
 ```
 
-
 > [!WARNING]
->Before running the `stow` command, make sure you have visited the [Tools](#tools) section and have installed the dependencies required.
+> Before running the `stow` command, make sure you have visited the [Tools](#tools) section and have installed the dependencies required.
 
 To install the configurations, run the following command:
 
@@ -97,4 +96,3 @@ Refer to the documentation for each tool for more options and details on customi
 - [Zsh Documentation](https://zsh.sourceforge.io/Doc/)
 - [Ghostty Documentation](https://ghostty.org/docs)
 - [Tmux Documentation](https://github.com/tmux/tmux/wiki)
-- [Starship Documentation](https://starship.rs/)
