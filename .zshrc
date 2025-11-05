@@ -54,7 +54,7 @@ bindkey -v
 alias v="nvim"
 alias vim="nvim"
 alias ls="ls -a --color"
-alias find="fd --color "
+alias find="fd --color never"
 
 # CLI tools - deferred to run after zsh-vi-mode
 function zvm_after_init() {
