@@ -55,6 +55,7 @@ alias v="nvim"
 alias vim="nvim"
 alias ls="ls -a --color"
 alias find="fd --color never"
+alias color="wl-color-picker clipboard"
 
 # CLI tools - deferred to run after zsh-vi-mode
 function zvm_after_init() {
