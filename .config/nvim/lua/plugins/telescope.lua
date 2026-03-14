@@ -101,6 +101,10 @@ return {
                     file_ignore_patterns = file_ignore_patterns,
                 })
             end, { desc = "Open dotfiles" })
+
+            vim.keymap.set("n", "<leader>gs", function()
+                builtin.git_stash({})
+            end)
         end,
     },
 }
