@@ -29,10 +29,7 @@ vim.lsp.config("ty", {
     root_markers = { ".git", "pyproject.toml" },
 })
 
-vim.lsp.enable("lua_ls")
-vim.lsp.enable("ts_ls")
-vim.lsp.enable("rust_analyzer")
-vim.lsp.enable("ty")
+vim.lsp.enable({ "lua_ls", "ts_ls", "rust_analyzer", "ty" })
 
 vim.diagnostic.config({
     virtual_text = true,
@@ -49,25 +46,13 @@ vim.api.nvim_create_autocmd("LspAttach", {
     callback = function(ev)
         local opts = { buffer = ev.buf, remap = false }
 
-        vim.keymap.set("n", "gr", function()
-            vim.cmd("Telescope lsp_references")
-        end, opts, { desc = "LSP Goto Reference" })
-
-        vim.keymap.set("n", "gd", function()
-            vim.lsp.buf.definition()
-        end, opts, { desc = "LSP Goto Definition" })
-
-        vim.keymap.set("n", "<leader>h", function()
+        vim.keymap.set("n", "grh", function()
             vim.lsp.buf.hover({ border = "rounded" })
-        end, opts, { desc = "LSP Hover" })
+        end, opts)
 
-        vim.keymap.set("n", "ca", function()
-            vim.lsp.buf.code_action()
-        end, opts, { desc = "LSP Code Action" })
-
-        vim.keymap.set("n", "<leader>d", function()
+        vim.keymap.set("n", "grd", function()
             vim.diagnostic.open_float({ border = "rounded" })
-        end, opts, { desc = "LSP full diagnostic window" })
+        end, opts)
 
         vim.keymap.set("n", "<leader>lsp", function()
             vim.diagnostic.enable(not vim.diagnostic.is_enabled())

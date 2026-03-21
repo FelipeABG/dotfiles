@@ -83,6 +83,10 @@ return {
                 })
             end, {})
 
+            vim.keymap.set("n", "grr", function()
+                builtin.lsp_references({})
+            end, {})
+
             vim.keymap.set("n", "L", function()
                 builtin.live_grep({
                     file_ignore_patterns = file_ignore_patterns,
