@@ -57,6 +57,29 @@ return {
                 end
             end
 
+            local references_entry_maker = function(opts)
+                local original = make_entry.gen_from_quickfix(opts)
+
+                return function(entry)
+                    local item = original(entry)
+                    if not item then
+                        return nil
+                    end
+                    item.display = function(e)
+                        local filename = vim.fn.fnamemodify(e.filename, ":t")
+                        local icon, icon_hl = devicons.get_icon(filename, nil, { default = true })
+                        local path = vim.fn.fnamemodify(e.filename, ":.")
+
+
+                        return displayer({
+                            { icon,                                icon_hl },
+                            { string.format("%s:%d", path, e.lnum) },
+                        })
+                    end
+                    return item
+                end
+            end
+
             telescope.setup({
                 pickers = {
                     find_files = {
@@ -84,7 +107,12 @@ return {
             end, {})
 
             vim.keymap.set("n", "grr", function()
-                builtin.lsp_references({})
+                builtin.lsp_references({
+                    entry_maker = references_entry_maker({
+                        show_line = false,
+                        trim_text = true
+                    })
+                })
             end, {})
 
             vim.keymap.set("n", "L", function()
