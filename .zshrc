@@ -14,6 +14,7 @@ source "${ZINIT_HOME}/zinit.zsh"
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light Aloxaf/fzf-tab  # Must have fzf installed
 zinit light jeffreytse/zsh-vi-mode
+zinit light zsh-users/zsh-completions
 
 # Add in snippets
 zinit snippet OMZP::git
