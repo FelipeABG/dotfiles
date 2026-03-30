@@ -18,9 +18,6 @@ zinit light zsh-users/zsh-completions
 
 # Add in snippets
 zinit snippet OMZP::git
-zinit snippet OMZP::sudo
-zinit snippet OMZP::archlinux
-zinit snippet OMZP::command-not-found
 
 # Load completions for zsh-completions
 autoload -Uz compinit && compinit
@@ -46,8 +43,14 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
+# Git branch for prompt
+git_branch() {
+  git rev-parse --abbrev-ref HEAD 2>/dev/null
+}
+setopt PROMPT_SUBST
+
 # Prompt design
-PROMPT='%B%F{#8fb797}%n@%m%f:%F{#46585b}%~%(1j.[%j].) %f$ %b'
+PROMPT='%B%F{#8fb797}%n@%m%f:%F{#46585b}%~[$(git_branch)]%(1j.[%j].) %f$ %b'
 # Keybinds
 bindkey -v
 
