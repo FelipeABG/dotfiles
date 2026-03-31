@@ -50,7 +50,7 @@ git_branch() {
 setopt PROMPT_SUBST
 
 # Prompt design
-PROMPT='%B%F{#8fb797}%n@%m%f:%F{#46585b}%~[$(git_branch)]%(1j.[%j].) %f$ %b'
+PROMPT='%B%F{#8fb797}%n@%m%f:%F{#46585b}%~$(b=$(git_branch); [[ -n $b ]] && print "[$b]")%(1j.[%j].) %f$ %b'
 # Keybinds
 bindkey -v
 
