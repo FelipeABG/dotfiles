@@ -1,6 +1,6 @@
-vim.pack.add({"https://github.com/stevearc/oil.nvim"})
+vim.pack.add({ "https://github.com/stevearc/oil.nvim" })
 
--- Imports 
+-- Imports
 local oil = require("oil")
 
 -- Configuration
@@ -11,12 +11,12 @@ oil.setup({
         max_height = 20,
         border = "rounded",
         win_options = {
-          winblend = 0,
+            winblend = 0,
         },
     },
     view_options = {
         show_hidden = true,
-    }
+    },
 })
 
 -- Keybinds

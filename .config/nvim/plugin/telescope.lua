@@ -1,4 +1,4 @@
-vim.pack.add({"https://github.com/nvim-telescope/telescope.nvim"})
+vim.pack.add({ "https://github.com/nvim-telescope/telescope.nvim" })
 
 -- Dependencies
 vim.pack.add({
