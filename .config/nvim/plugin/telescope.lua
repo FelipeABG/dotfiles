@@ -3,7 +3,8 @@ vim.pack.add({ "https://github.com/nvim-telescope/telescope.nvim" })
 -- Dependencies
 vim.pack.add({
     "https://github.com/nvim-lua/plenary.nvim",
-    "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
+    "https://github.com/nvim-telescope/telescope-fzf-native.nvim",
+    "https://github.com/nvim-telescope/telescope-ui-select.nvim"
 })
 
 -- Imports
@@ -28,6 +29,7 @@ telescope.setup({
 })
 
 telescope.load_extension("fzf")
+telescope.load_extension("ui-select")
 
 vim.api.nvim_create_autocmd("FileType", {
     pattern = "TelescopeResults",
