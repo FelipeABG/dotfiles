@@ -9,16 +9,12 @@
       "src": "https://github.com/m4xshen/autoclose.nvim"
     },
     "blink.cmp": {
-      "rev": "5e088706d92da09949e081cc4d49e2c9ba8cfc8c",
+      "rev": "ba9601b77e721d53d66e1486a30a05c6311cf535",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "conform.nvim": {
       "rev": "086a40dc7ed8242c03be9f47fbcee68699cc2395",
       "src": "https://github.com/stevearc/conform.nvim"
-    },
-    "dressing.nvim": {
-      "rev": "2d7c2db2507fa3c4956142ee607431ddb2828639",
-      "src": "https://github.com/stevearc/dressing.nvim"
     },
     "everforest": {
       "rev": "b03a03148c8b34c24c96960b93da9c8883d11f54",
@@ -33,7 +29,7 @@
       "src": "https://github.com/rafamadriz/friendly-snippets"
     },
     "gitsigns.nvim": {
-      "rev": "c4854e174979d84d84fe56d3234b95a612673731",
+      "rev": "944ef13cc8d8fe8b846c91f36041c8dfb85ca000",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
     "indent-blankline.nvim": {
@@ -49,11 +45,11 @@
       "src": "https://github.com/nvim-lualine/lualine.nvim"
     },
     "nvim-treesitter": {
-      "rev": "7caec274fd19c12b55902a5b795100d21531391f",
+      "rev": "234d76709e8de5efe0357458e097b633a1886890",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
     "nvim-web-devicons": {
-      "rev": "d7462543c9e366c0d196c7f67a945eaaf5d99414",
+      "rev": "40e9d5a6cc3db11b309e39593fc7ac03bb844e38",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
     "oil.nvim": {
@@ -69,7 +65,7 @@
       "src": "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
     },
     "telescope.nvim": {
-      "rev": "e6cdb4dc528c5dc4ca8da86e83ef4e3c84b0729c",
+      "rev": "cfb85dcf7f822b79224e9e6aef9e8c794211b20b",
       "src": "https://github.com/nvim-telescope/telescope.nvim"
     },
     "vim-illuminate": {
