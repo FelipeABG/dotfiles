@@ -23,13 +23,24 @@ vim.lsp.config("rust_analyzer", {
     }
 })
 
-vim.lsp.config("ty", {
-    cmd = { "ty", "server" },
+vim.lsp.config("basedpyright", {
+    cmd = { "basedpyright-langserver", "--stdio" },
     filetypes = { "python" },
     root_markers = { ".git", "pyproject.toml" },
+    settings = {
+        basedpyright = {
+            analysis = {
+                diagnosticMode = 'openFilesOnly',
+                typeCheckingMode = 'recommended',
+                inlayHints = {
+                    callArgumentNames = true
+                }
+            },
+        },
+    },
 })
 
-vim.lsp.enable({ "lua_ls", "ts_ls", "rust_analyzer", "ty" })
+vim.lsp.enable({ "lua_ls", "ts_ls", "rust_analyzer", "basedpyright" })
 
 vim.diagnostic.config({
     virtual_text = true,
