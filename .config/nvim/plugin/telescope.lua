@@ -24,7 +24,12 @@ telescope.setup({
     },
     extensions = {
         fzf = {},
-        ["ui-select"] = {},
+        ["ui-select"] = {
+            require("telescope.themes").get_dropdown({
+                width = 0.5,
+                height = 0.4,
+            }),
+        },
     },
 })
 
