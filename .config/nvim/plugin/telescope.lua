@@ -147,3 +147,7 @@ end)
 vim.keymap.set("n", "<leader>gs", function()
     builtin.git_stash({})
 end)
+
+vim.keymap.set("n", "<leader>s", function()
+    builtin.buffers({})
+end)
