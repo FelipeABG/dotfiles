@@ -9,7 +9,7 @@
       "src": "https://github.com/m4xshen/autoclose.nvim"
     },
     "blink.cmp": {
-      "rev": "ba9601b77e721d53d66e1486a30a05c6311cf535",
+      "rev": "6731979aa370be0e5c7cc73258ce945730a515c9",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "conform.nvim": {
@@ -19,10 +19,6 @@
     "everforest": {
       "rev": "b03a03148c8b34c24c96960b93da9c8883d11f54",
       "src": "https://github.com/sainnhe/everforest"
-    },
-    "filenav.nvim": {
-      "rev": "1508d015c15728db8ca88e7cb4ea270eb73c7295",
-      "src": "https://github.com/wojciech-kulik/filenav.nvim"
     },
     "friendly-snippets": {
       "rev": "6cd7280adead7f586db6fccbd15d2cac7e2188b9",
@@ -41,7 +37,7 @@
       "src": "https://github.com/folke/lazydev.nvim"
     },
     "lualine.nvim": {
-      "rev": "47f91c416daef12db467145e16bed5bbfe00add8",
+      "rev": "74114f0df664f14d7c228945693ba68a3b70a794",
       "src": "https://github.com/nvim-lualine/lualine.nvim"
     },
     "nvim-treesitter": {
