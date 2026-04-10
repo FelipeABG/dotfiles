@@ -149,5 +149,5 @@ vim.keymap.set("n", "<leader>gs", function()
 end)
 
 vim.keymap.set("n", "<leader>s", function()
-    builtin.buffers({})
+    builtin.buffers({ initial_mode = "normal" })
 end)
