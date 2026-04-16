@@ -12,6 +12,8 @@ local builtin = require("telescope.builtin")
 local telescope = require("telescope")
 local entry_display = require("telescope.pickers.entry_display")
 local make_entry = require("telescope.make_entry")
+local action_state = require("telescope.actions.state")
+local actions = require("telescope.actions")
 local devicons = require("nvim-web-devicons")
 
 -- Global telescope configuration
@@ -149,5 +151,17 @@ vim.keymap.set("n", "<leader>gs", function()
 end)
 
 vim.keymap.set("n", "<leader>s", function()
-    builtin.buffers({ initial_mode = "normal" })
+    builtin.buffers({
+        initial_mode = "normal",
+        attach_mappings = function(prompt_bufnr, map)
+            map("n", "dd", function()
+                local selection = action_state.get_selected_entry()
+                if selection == nil then return end
+                vim.api.nvim_buf_delete(selection.bufnr, { force = false })
+                actions.close(prompt_bufnr)
+                builtin.buffers({ initial_mode = "normal" })
+            end)
+            return true
+        end,
+    })
 end)
