@@ -7,7 +7,7 @@ local conform = require("conform")
 conform.setup({
     format_on_save = {
         timeout_ms = 500,
-        lsp_fallback = true,
+        lsp_format = "fallback",
     },
 
     formatters_by_ft = {
@@ -20,7 +20,7 @@ conform.setup({
         markdown = { "prettier" },
         rust = { "rustfmt" },
         css = { "prettier" },
-        python = { "ruff" },
+        python = { "ruff_format", "ruff_fix" },
         go = { "gofmt" },
     },
 })
